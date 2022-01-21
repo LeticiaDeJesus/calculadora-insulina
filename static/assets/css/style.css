@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
     text-align: center;
     
 }
@@ -16,29 +15,77 @@ body {
 .box {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 }
 
-h1 {
+h1, footer {
     color: #fff;
-    padding-top: 50px;
+    margin-top: 61px;
 }
 
 .box-calculator {
-    width: 400px;
+    margin-top: 70px;
+    position: relative;
+    min-width: 350px;
+    min-height: 400px;
     background: rgba(0, 0, 0, 0.2);
-    filter: blur(75%);
-    border: #000 solid 1px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    border-right: solid 1px rgba(255, 255, 255, 0.2);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 50px;
+
+
+}
+p {
+    background-color: transparent;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: solid 2px rgba(255, 255, 255, 0.5);
+    border-right: solid 1px rgba(255, 255, 255, 0.2);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-weight: 900;    
 }
 
-p {
-    background-color: #dcdcdc;
-    width: 150px;
-    height: 30px;
-    padding: 3px;
-    display: block;
+.number1, .number2, .number3 {
+    height: 40px;
+    border-radius: 5px;
+    background:rgba(255, 255, 255, 0.9) ;
+    font-weight: 600;
+    margin-top: 5px;
+    border-color: rgba(0, 0, 0, 0.3);
+
+
+}
+
+.btn {
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    background: rgba(0, 0, 0, 1);
+    color: #fff;
+    font-weight: 500;
+
+
+    
+}
+.btn:hover {
+    background: rgba(0, 0, 0, 0.4);
 }
